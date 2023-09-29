@@ -23,7 +23,26 @@
 
 ## Features
 
-- TODO
+- creates a Python package;
+- Poetry for dependency management;
+- GitHub repository to host the code;
+- pre-commit hooks to make sure we only make commits that meet certain criteria;
+- added a license to the project;
+- configured Poetry to allow uploading to PyPI and a test version of PyPI;
+- tested uploading the package to a test version of PyPI;
+- added Scriv to help us with changelog management and generation;
+- contributer guide;
+- code of conduct documentation;
+- sphinx documentation;
+- readme project description;
+- tagged and published a release of our project;
+- implemented unit tests;
+- automated testing and linting with nox;
+- checked code coverage;
+- CI/CD with GitHub actions to run linting and testing;
+- integrated with Codecov to get coverage reports in our pull requests;
+- created a GitHub action to publish our package to PyPI automatically;
+- badges to the README file;;
 
 ## Requirements
 

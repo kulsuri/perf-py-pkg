@@ -2,7 +2,7 @@
 name = "perf-py-pkg"
 version = "0.0.0"
 description = "Perfect Python Package"
-authors = ["Kulraj Suri <kulraj.suri@gmail.com>"]
+authors = ["Kulraj Suri <kul@outlook.com>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/kulsuri/perf-py-pkg"
