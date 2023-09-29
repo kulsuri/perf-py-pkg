@@ -38,7 +38,6 @@ furo = ">=2021.11.12"
 isort = ">=5.10.1"
 mypy = ">=0.930"
 pep8-naming = ">=0.12.1"
-pre-commit = ">=2.16.0"
 pre-commit-hooks = ">=4.1.0"
 pytest = ">=6.2.5"
 pyupgrade = ">=2.29.1"
@@ -49,6 +48,9 @@ sphinx-click = ">=3.0.2"
 typeguard = ">=2.13.3"
 xdoctest = {extras = ["colors"], version = ">=0.15.10"}
 myst-parser = {version = ">=0.16.1"}
+certifi = "^2023.7.22"
+pytest-cov = "^4.1.0"
+pre-commit = "^3.4.0"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]

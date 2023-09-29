@@ -42,7 +42,32 @@
 - CI/CD with GitHub actions to run linting and testing;
 - integrated with Codecov to get coverage reports in our pull requests;
 - created a GitHub action to publish our package to PyPI automatically;
-- badges to the README file;;
+- badges to the README file;
+
+update with these:
+
+- Packaging and dependency management with Poetry
+  Test automation with Nox
+  Linting with pre-commit and Flake8
+  Continuous integration with GitHub Actions
+  Documentation with Sphinx, MyST, and Read the Docs using the furo theme
+  Automated uploads to PyPI and TestPyPI
+  Automated release notes with Release Drafter
+  Automated dependency updates with Dependabot
+  Code formatting with Black and Prettier
+  Import sorting with isort
+  Testing with pytest
+  Code coverage with Coverage.py
+  Coverage reporting with Codecov
+  Command-line interface with Click
+  Static type-checking with mypy
+  Runtime type-checking with Typeguard
+  Automated Python syntax upgrades with pyupgrade
+  Security audit with Bandit and Safety
+  Check documentation examples with xdoctest
+  Generate API documentation with autodoc and napoleon
+  Generate command-line reference with sphinx-click
+  Manage project labels with GitHub Labeler
 
 ## Requirements
 
