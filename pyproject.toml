@@ -23,8 +23,6 @@ click = ">=8.0.1"
 perf-py-pkg = "perf_py_pkg.__main__:main"
 
 [tool.poetry.group.dev.dependencies]
-ipython = "^8.16.0"
-ipykernel = "^6.25.2"
 Pygments = ">=2.10.0"
 black = ">=21.10b0"
 coverage = {extras = ["toml"], version = ">=6.2"}
@@ -51,6 +49,13 @@ myst-parser = {version = ">=0.16.1"}
 certifi = "^2023.7.22"
 pytest-cov = "^4.1.0"
 pre-commit = "^3.4.0"
+
+[tool.poetry.group.notebooks]
+optional = true
+
+[tool.poetry.group.notebooks.dependencies]
+ipython = "^8.16.0"
+ipykernel = "^6.25.2"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
