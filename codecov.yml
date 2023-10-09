@@ -1,9 +1,15 @@
-comment: false
+comment: true
 coverage:
   status:
     project:
       default:
-        target: "100"
+        # Commits pushed to main should not make the overall
+        # project coverage decrease by more than 1%
+        target: auto
+        threshold: 1%
     patch:
       default:
-        target: "100"
+        # Be tolerant on code coverage diff on PRs to limit
+        # noisy red coverage status on github PRs.
+        target: auto
+        threshold: 20%

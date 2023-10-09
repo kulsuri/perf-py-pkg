@@ -30,7 +30,6 @@
 - added a license to the project;
 - configured Poetry to allow uploading to PyPI and a test version of PyPI;
 - tested uploading the package to a test version of PyPI;
-- added Scriv to help us with changelog management and generation;
 - contributer guide;
 - code of conduct documentation;
 - sphinx documentation;
