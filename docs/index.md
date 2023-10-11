@@ -12,8 +12,10 @@ end-before: <!-- github-only -->
 ---
 hidden:
 maxdepth: 1
+caption: Contents:
 ---
 
+quickstart
 usage
 reference
 contributing
