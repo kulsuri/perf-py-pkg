@@ -10,6 +10,7 @@ Submodules
 ----------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    perf_py_pkg.core
+   perf_py_pkg.utils

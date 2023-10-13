@@ -21,13 +21,37 @@
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [black]: https://github.com/psf/black
 
+Python package template with all the bells and whistles. An adaptation of cookiecutter hypermodern pypackage with some additional features.
 ## Features
 
-- creates a Python package;
+- Packaging and dependency management with Poetry
+- Test automation with Nox
+- Linting with pre-commit and Flake8
+Continuous integration with GitHub Actions
+Documentation with Sphinx, MyST, and Read the Docs using the furo theme
+Automated uploads to PyPI and TestPyPI
+Automated release notes with Release Drafter
+Automated dependency updates with Dependabot
+Code formatting with Black and Prettier
+Import sorting with isort
+Testing with pytest
+Code coverage with Coverage.py
+Coverage reporting with Codecov
+Command-line interface with Click
+Static type-checking with mypy
+Runtime type-checking with Typeguard
+Automated Python syntax upgrades with pyupgrade
+Security audit with Bandit and Safety
+Check documentation examples with xdoctest
+Generate API documentation with autodoc and napoleon
+Generate command-line reference with sphinx-click
+Manage project labels with GitHub Labeler
+
+- Python package;
 - Poetry for dependency management;
 - GitHub repository to host the code;
-- pre-commit hooks to make sure we only make commits that meet certain criteria;
-- added a license to the project;
+- pre-commit hooks to ensure commits meet certain criteria;
+- License;
 - configured Poetry to allow uploading to PyPI and a test version of PyPI;
 - tested uploading the package to a test version of PyPI;
 - contributer guide;
@@ -70,7 +94,20 @@ update with these:
 
 ## Requirements
 
-- TODO
+> **_NOTE:_**  pipx is recommended to install the following tools.
+
+Poetry
+```console
+$ pipx install poetry
+```
+Nox
+```console
+$ pipx install nox
+```
+nox-poetry
+```console
+$ pipx inject nox nox-poetry
+```
 
 ## Installation
 
@@ -82,35 +119,33 @@ $ pip install perf-py-pkg
 
 ## Usage
 
-Please see the [Command-line Reference] for details.
+Documentation is available at [Read the Docs] and [GitHub Pages].
+
+<b>Example
+```python
+from perf_py_pkg import core as c
+
+c.add_one(1)
+#> 2 
+```
 
 ## Contributing
 
 Contributions are very welcome.
 To learn more, see the [Contributor Guide].
 
-## License
-
-Distributed under the terms of the [MIT license][license],
-_Perfect Python Package_ is free and open source software.
-
 ## Issues
 
 If you encounter any problems,
 please [file an issue] along with a detailed description.
 
-## Credits
-
-This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter] template.
-
-[@cjolowicz]: https://github.com/cjolowicz
-[pypi]: https://pypi.org/
-[hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
 [file an issue]: https://github.com/kulsuri/perf-py-pkg/issues
 [pip]: https://pip.pypa.io/
+[PyPi]: https://pypi.org/project/perf-py-pkg/
+[GitHub Pages]: https://kulsuri.github.io/perf-py-pkg/
 
 <!-- github-only -->
 
 [license]: https://github.com/kulsuri/perf-py-pkg/blob/main/LICENSE
 [contributor guide]: https://github.com/kulsuri/perf-py-pkg/blob/main/CONTRIBUTING.md
-[command-line reference]: https://perf-py-pkg.readthedocs.io/en/latest/usage.html
+[read the docs]: https://perf-py-pkg.readthedocs.io/en/latest/usage.html
