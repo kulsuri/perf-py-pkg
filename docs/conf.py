@@ -24,7 +24,6 @@ release = importlib.metadata.version("perf_py_pkg")
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
-    "sphinx_click",
     "sphinx.ext.autodoc",  # automatically generate documentation for modules
     "sphinx.ext.napoleon",  # to read Google-style or Numpy-style docstrings
     "sphinx.ext.viewcode",  # to allow vieing the source code in the web page
