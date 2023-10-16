@@ -5,7 +5,7 @@ name: Documentation
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [main, master, feature/issue-17/github-pages-docs]
+    branches: [main, master]
   # pull_request:
   #   branches: [main, master]
 
