@@ -9,7 +9,7 @@ SOURCEDIR     = .
 BUILDDIR      = _build
 APIDOC		  = sphinx-apidoc
 APIDOCMODPATH = ../src/perf_py_pkg
-APIDOCOPTS    ?= -fMTe -d 2
+APIDOCOPTS    ?= -fMe -d 2
 APIDOCEXCLPTN ?= ../src/perf_py_pkg/utils.py
 
 

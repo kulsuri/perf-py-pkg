@@ -16,7 +16,7 @@ caption: Usage
 ---
 
 Quickstart <quickstart>
-Reference <source/perf_py_pkg>
+Reference <source/modules>
 ```
 
 ```{toctree}
