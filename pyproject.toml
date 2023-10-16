@@ -9,7 +9,7 @@ homepage = "https://github.com/kulsuri/perf-py-pkg"
 repository = "https://github.com/kulsuri/perf-py-pkg"
 documentation = "https://perf-py-pkg.readthedocs.io"
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 5 - Production/Stable",
 ]
 
 [tool.poetry.urls]
