@@ -211,12 +211,17 @@ def docs_build(session: Session) -> None:
         args.insert(0, "--color")
 
     session.install(".")
-    session.install("sphinx", "sphinx-click", "furo", "myst-parser")
+    session.install("sphinx", "furo", "myst-parser")
 
     build_dir = Path("docs", "_build")
     if build_dir.exists():
         shutil.rmtree(build_dir)
 
+    # Generate API docs
+    session.run(
+        "sphinx-apidoc", "-fMe", "-d", "2", "-o", "docs/source", "src/perf_py_pkg"
+    )
+    # Build the html docs
     session.run("sphinx-build", *args)
 
 
@@ -225,10 +230,15 @@ def docs(session: Session) -> None:
     """Build and serve the documentation with live reloading on file changes."""
     args = session.posargs or ["--open-browser", "docs", "docs/_build"]
     session.install(".")
-    session.install("sphinx", "sphinx-autobuild", "sphinx-click", "furo", "myst-parser")
+    session.install("sphinx", "sphinx-autobuild", "furo", "myst-parser")
 
     build_dir = Path("docs", "_build")
     if build_dir.exists():
         shutil.rmtree(build_dir)
 
+    # Generate API docs
+    session.run(
+        "sphinx-apidoc", "-fMe", "-d", "2", "-o", "docs/source", "src/perf_py_pkg"
+    )
+    # Build and serve the html docs with live reloading
     session.run("sphinx-autobuild", *args)
