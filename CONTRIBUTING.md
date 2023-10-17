@@ -13,7 +13,7 @@ Here is a list of important resources for contributors:
 
 [mit license]: https://opensource.org/licenses/MIT
 [source code]: https://github.com/kulsuri/perf-py-pkg
-[documentation]: https://perf-py-pkg.readthedocs.io/
+[documentation]: https://kulsuri.github.io/perf-py-pkg/
 [issue tracker]: https://github.com/kulsuri/perf-py-pkg/issues
 
 ## How to report a bug
