@@ -217,6 +217,9 @@ def docs_build(session: Session) -> None:
     if build_dir.exists():
         shutil.rmtree(build_dir)
 
+    # Generate API docs
+    session.run("sphinx-apidoc", "-fMe", "-d", "2", "-o", "docs/source", "src/perf_py_pkg")
+    # Build the html docs
     session.run("sphinx-build", *args)
 
 
@@ -231,4 +234,7 @@ def docs(session: Session) -> None:
     if build_dir.exists():
         shutil.rmtree(build_dir)
 
+    # Generate API docs
+    session.run("sphinx-apidoc", "-fMe", "-d", "2", "-o", "docs/source", "src/perf_py_pkg")
+    # Build and serve the html docs with live reloading
     session.run("sphinx-autobuild", *args)

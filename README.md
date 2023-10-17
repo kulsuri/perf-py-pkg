@@ -5,16 +5,20 @@
 [![Python Version](https://img.shields.io/pypi/pyversions/perf-py-pkg)][python version]
 [![License](https://img.shields.io/pypi/l/perf-py-pkg)][license]
 
-[![Read the documentation at https://perf-py-pkg.readthedocs.io/](https://img.shields.io/readthedocs/perf-py-pkg/latest.svg?label=Read%20the%20Docs)][read the docs]
 [![Tests](https://github.com/kulsuri/perf-py-pkg/workflows/Tests/badge.svg)][tests]
 [![Codecov](https://codecov.io/gh/kulsuri/perf-py-pkg/branch/main/graph/badge.svg)][codecov]
+
+[![GitHub Pages Docs](https://github.com/kulsuri/perf-py-pkg/actions/workflows/documentation.yml/badge.svg)][GitHub Pages Docs]
+[![Read the documentation at https://perf-py-pkg.readthedocs.io/](https://img.shields.io/readthedocs/perf-py-pkg/latest.svg?label=Read%20the%20Docs)][read the docs]
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
 
+
 [pypi_]: https://pypi.org/project/perf-py-pkg/
 [status]: https://pypi.org/project/perf-py-pkg/
 [python version]: https://pypi.org/project/perf-py-pkg
+[GitHub Pages Docs]: https://github.com/kulsuri/perf-py-pkg/actions/workflows/documentation.yml/badge.svg
 [read the docs]: https://perf-py-pkg.readthedocs.io/
 [tests]: https://github.com/kulsuri/perf-py-pkg/actions?workflow=Tests
 [codecov]: https://app.codecov.io/gh/kulsuri/perf-py-pkg
@@ -26,21 +30,23 @@ Python package template with all the bells and whistles. An adaptation of cookie
 
 - Packaging and dependency management with Poetry
 - Test automation with Nox
-- Linting with pre-commit and Flake8
+- Pre-commit hooks:
+  - Linting with Flake8
+  - Code formatting with Black and Prettier
+  - Import sorting with isort
+  - Doc string linting with Darglint
+  - Automated Python syntax upgrades with pyupgrade
 - Continuous integration with GitHub Actions
 - Documentation with Sphinx & MyST using the furo theme
-- Automated documentation deployment to Read the Docs and GitHub Pages 
+- Automated documentation deployment to Read the Docs and GitHub Pages
 - Automated uploads to PyPI and TestPyPI
 - Automated release notes with Release Drafter
 - Automated dependency updates with Dependabot
-- Code formatting with Black and Prettier
-- Import sorting with isort
 - Testing with pytest
 - Code coverage with Coverage.py
 - Coverage reporting with Codecov
 - Static type-checking with mypy
 - Runtime type-checking with Typeguard
-- Automated Python syntax upgrades with pyupgrade
 - Security audit with Bandit and Safety
 - Check documentation examples with xdoctest
 - Generate API documentation with autodoc and napoleon
