@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "perf-py-pkg"
-version = "0.0.2"
+version = "0.0.1"
 description = "Perfect Python Package"
 authors = ["Kulraj Suri <kul@outlook.com>"]
 license = "MIT"
