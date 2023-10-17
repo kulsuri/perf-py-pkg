@@ -22,9 +22,9 @@ version = importlib.metadata.version("perf_py_pkg")
 release = importlib.metadata.version("perf_py_pkg")
 
 extensions = [
-    "sphinx.ext.autodoc", # automatically generate documentation for modules
-    "sphinx.ext.napoleon", # to read Google-style or Numpy-style docstrings
-    "sphinx.ext.mathjax", # to allow the use of math in the documentation
+    "sphinx.ext.autodoc",  # automatically generate documentation for modules
+    "sphinx.ext.napoleon",  # to read Google-style or Numpy-style docstrings
+    "sphinx.ext.mathjax",  # to allow the use of math in the documentation
     "sphinx.ext.viewcode",  # to allow vieing the source code in the web page
     "myst_parser",
 ]

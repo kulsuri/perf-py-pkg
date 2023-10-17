@@ -14,7 +14,6 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
 
-
 [pypi_]: https://pypi.org/project/perf-py-pkg/
 [status]: https://pypi.org/project/perf-py-pkg/
 [python version]: https://pypi.org/project/perf-py-pkg
@@ -26,6 +25,7 @@
 [black]: https://github.com/psf/black
 
 Python package template with all the bells and whistles. An adaptation of cookiecutter hypermodern pypackage with some additional features.
+
 ## Features
 
 - Packaging and dependency management with Poetry
@@ -54,17 +54,22 @@ Python package template with all the bells and whistles. An adaptation of cookie
 
 ## Requirements
 
-> **_NOTE:_**  pipx is recommended to install the following tools.
+> **_NOTE:_** pipx is recommended to install the following tools.
 
 Poetry
+
 ```console
 $ pipx install poetry
 ```
+
 Nox
+
 ```console
 $ pipx install nox
 ```
+
 nox-poetry
+
 ```console
 $ pipx inject nox nox-poetry
 ```
@@ -82,11 +87,12 @@ $ pip install perf-py-pkg
 Documentation is available at [Read the Docs] and [GitHub Pages].
 
 <b>Example
+
 ```python
 from perf_py_pkg import core as c
 
 c.add_one(1)
-#> 2 
+#> 2
 ```
 
 ## Contributing

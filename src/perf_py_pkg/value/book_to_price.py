@@ -1,10 +1,13 @@
 """Book Value Per Share to Price."""
 
-def book_price(common_equity_mr0: float,
-               common_shares_outstanding_mr0: float,
-               close: float,
-               report_curr_to_usd: float, 
-               quote_curr_to_usd: float) -> float:
+
+def book_price(
+    common_equity_mr0: float,
+    common_shares_outstanding_mr0: float,
+    close: float,
+    report_curr_to_usd: float,
+    quote_curr_to_usd: float,
+) -> float:
     r"""Book Value Per Share to Price.
 
     Notes:

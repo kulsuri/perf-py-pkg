@@ -37,7 +37,7 @@ jobs:
         run: |
           pip install --constraint=.github/workflows/constraints.txt pip
           pip --version
-          
+
       # Install dependencies
       - name: Install dependencies
         run: |
@@ -49,20 +49,19 @@ jobs:
         run: |
           cd docs/
           make apidoc
-      
+
       # Build the html pages
       - name: Sphinx build html pages
         run: |
           cd docs/
           make html
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./docs/_build/html
 
   deploy-docs:
-    
     # Add a dependency to the build job
     needs: build-docs
 
@@ -71,9 +70,9 @@ jobs:
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-    
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+
     # Deploy to the github-pages environment
     environment:
       name: github-pages
@@ -81,7 +80,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      
       # # Deploy to the github-pages environment
       # - name: Deploy to GitHub Pages
       #   id: deployment

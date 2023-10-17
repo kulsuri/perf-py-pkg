@@ -7,7 +7,6 @@ end-before: <!-- github-only -->
 [license]: license
 [contributor guide]: contributing
 
-
 ```{toctree}
 ---
 hidden:
@@ -28,7 +27,6 @@ caption: Contributing
 
 Contributor Guide <contributing>
 ```
-
 
 ```{toctree}
 ---
