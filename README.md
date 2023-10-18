@@ -11,8 +11,10 @@
 [![GitHub Pages Docs](https://github.com/kulsuri/perf-py-pkg/actions/workflows/documentation.yml/badge.svg)][GitHub Pages Docs]
 [![Read the documentation at https://perf-py-pkg.readthedocs.io/](https://img.shields.io/readthedocs/perf-py-pkg/latest.svg?label=Read%20the%20Docs)][read the docs]
 
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)][poetry website]
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+[![imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)][isort]
 
 [pypi_]: https://pypi.org/project/perf-py-pkg/
 [status]: https://pypi.org/project/perf-py-pkg/
@@ -21,8 +23,10 @@
 [read the docs]: https://perf-py-pkg.readthedocs.io/
 [tests]: https://github.com/kulsuri/perf-py-pkg/actions?workflow=Tests
 [codecov]: https://app.codecov.io/gh/kulsuri/perf-py-pkg
+[poetry website]: https://python-poetry.org/
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [black]: https://github.com/psf/black
+[isort]: https://pycqa.github.io/isort/
 
 Python package template with all the bells and whistles. An adaptation of cookiecutter hypermodern pypackage with some additional features.
 
